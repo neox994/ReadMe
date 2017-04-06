@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvInputValue"
+        style="@style/rstyle"
+        android:textStyle="italic"
+        android:paddingTop="100dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tvFirstSpinner"
+        android:layout_below="@id/tvInputValue"
+        style="@style/rstyle"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/ivE"
+        android:layout_below="@id/tvFirstSpinner"
+        style="@style/rstyle"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon"
+        />
+
+    <TextView
+        android:id="@+id/tvResult"
+        style="@style/rstyle"
+        android:layout_below="@id/ivE"
+        android:textStyle="italic"
+        />
+
+    <TextView
+        android:id="@+id/tvSecondSpinner"
+        android:layout_below="@id/tvResult"
+        style="@style/rstyle"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

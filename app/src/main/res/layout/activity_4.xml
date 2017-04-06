@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color3"
+    tools:context="com.example.neboja.unicon.Activity4">
+
+    <TextView
+        android:id="@+id/tvWeightCon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight Converter"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Spinner
+        android:id="@+id/sS1"
+        android:layout_below="@+id/tvWeightCon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7E57C2"
+        android:popupBackground="#7E57C2">
+    </Spinner>
+
+
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sS1"
+        android:inputType="numberDecimal"
+        android:hint="Enter value!" />
+
+
+    <Spinner
+        android:id="@+id/sS2"
+        android:layout_below="@+id/etWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7E57C2"
+        android:popupBackground="#7E57C2">
+    </Spinner>
+
+
+    <Button
+        android:id="@+id/bconvertWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#7E57C2"/>
+
+
+</RelativeLayout>

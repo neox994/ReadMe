@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">UniCon</string>
+
+    <string-array name="sOptions">
+        <item name="Celsius">Celsius</item>
+        <item name="Fahrenheits">Fahrenheits</item>
+        <item name="Kelvins">Kelvins</item>
+        >
+    </string-array>
+
+    <string-array name="sOptions2">
+
+        <item name="Kilometers per hour">Kilometers per hour</item>
+        <item name="Miles per hour">Miles per hour</item>
+        <item name="Meters per second">Meters per second</item>
+
+    </string-array>
+
+    <string-array name="sOptions3">
+
+        <item name="Kilograms">Kilograms</item>
+        <item name="Pounds">Pounds</item>
+
+    </string-array>
+
+    <string-array name="sOptions4">
+
+        <item name="Centimeters">Centimeters</item>
+        <item name="Inches">Inches</item>
+
+    </string-array>
+</resources>

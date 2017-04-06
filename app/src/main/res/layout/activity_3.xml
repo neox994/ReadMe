@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color1"
+    tools:context="com.example.neboja.unicon.Activity3">
+
+    <TextView
+        android:id="@+id/tvSpeedCon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed Converter"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Spinner
+        android:id="@+id/sS3"
+        android:layout_below="@+id/tvSpeedCon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/a3Bcolor"
+        android:popupBackground="@color/a3Bcolor">
+    </Spinner>
+
+
+    <EditText
+        android:id="@+id/etSpeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sS3"
+        android:inputType="numberDecimal"
+        android:hint="Enter value!" />
+
+
+    <Spinner
+        android:id="@+id/sS4"
+        android:layout_below="@+id/etSpeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/a3Bcolor"
+        android:popupBackground="@color/a3Bcolor">>
+
+    </Spinner>
+
+
+    <Button
+        android:id="@+id/bconvertSpeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/a3Bcolor"/>
+
+
+</RelativeLayout>
+

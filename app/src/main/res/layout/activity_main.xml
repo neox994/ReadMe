@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.neboja.unicon.MainActivity">
+
+    <ImageButton
+        android:id="@+id/B1"
+        style="@style/style1"
+        android:src="@drawable/s1"
+
+        android:background="@color/color22"/>
+        />
+
+    <ImageButton
+        android:id="@+id/B2"
+        style="@style/style1"
+        android:layout_below="@+id/B1"
+        android:src="@drawable/s2"
+        android:background="@color/color11"/>
+
+    <ImageButton
+        android:id="@+id/B3"
+        style="@style/style1"
+        android:layout_below="@+id/B2"
+        android:src="@drawable/s3"
+        android:background="@color/color33"/>/>
+
+
+    <ImageButton
+        android:id="@+id/B4"
+        style="@style/style1"
+        android:layout_below="@+id/B3"
+        android:src="@drawable/s4"
+        android:background="@color/color44"/>/>
+
+</RelativeLayout>
