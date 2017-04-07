@@ -81,23 +81,23 @@ public class Activity3 extends Activity{
 
 
                 inputValue = Speed.getText().toString();
-                if (inputValue.matches("")||(inputValue.matches("."))) {
-                    Toast.makeText(getApplicationContext(), "Please Enter value!!!", Toast.LENGTH_SHORT).show();
-                } else {
-                    double input = Double.parseDouble(Speed.getText().toString());
+               if (inputValue.isEmpty() || inputValue.equals(".")){
+                   Toast.makeText(getApplicationContext(), "Please Enter value!!!", Toast.LENGTH_SHORT).show();
+               } else {
+                   double input = Double.parseDouble(Speed.getText().toString());
 
-                    result = calculate(Double.parseDouble(Speed.getText().toString()), value1, value2);
-                    Intent resultActivity;
-                    resultActivity = new Intent(v.getContext(), RActivity.class);
-                    Bundle bundle = new Bundle();
-                    bundle.putString("FIRST_SPINNER", value1);
-                    bundle.putString("SECOND_SPINNER", value2);
-                    bundle.putDouble("INPUT_VALUE", input);
-                    bundle.putDouble("RESULT", result);
-                    bundle.putInt("COLOR", color);
-                    resultActivity.putExtras(bundle);
-                    startActivity(resultActivity);
-                    }
+                   result = calculate(Double.parseDouble(Speed.getText().toString()), value1, value2);
+                   Intent resultActivity;
+                   resultActivity = new Intent(v.getContext(), RActivity.class);
+                   Bundle bundle = new Bundle();
+                   bundle.putString("FIRST_SPINNER", value1);
+                   bundle.putString("SECOND_SPINNER", value2);
+                   bundle.putDouble("INPUT_VALUE", input);
+                   bundle.putDouble("RESULT", result);
+                   bundle.putInt("COLOR", color);
+                   resultActivity.putExtras(bundle);
+                   startActivity(resultActivity);
+               }
 
                 }
             });

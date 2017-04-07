@@ -85,7 +85,7 @@ public class Activity2 extends Activity{
             public void onClick(View v) {
 
                 inputValue = Temperature.getText().toString();
-                if (inputValue.matches("")||(inputValue.matches("."))) {
+                if (inputValue.isEmpty() || inputValue.equals(".")){
                     Toast.makeText(getApplicationContext(), "Please Enter value!!!", Toast.LENGTH_SHORT).show();
                 } else {
 

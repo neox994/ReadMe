@@ -44,11 +44,11 @@ public class RActivity extends Activity {
             view.setBackgroundResource(R.color.color4);
         }
             tvInputValue = (TextView) findViewById(R.id.tvInputValue);
-            tvInputValue.setText(""+inputValue);
+            tvInputValue.setText(String.valueOf(inputValue));
             tvFirstSpinner = (TextView) findViewById(R.id.tvFirstSpinner);
             tvFirstSpinner.setText(value1);
             tvResult = (TextView) findViewById(R.id.tvResult);
-            tvResult.setText(""+result);
+            tvResult.setText(String.valueOf(result));
             tvSecondSpinner = (TextView) findViewById(R.id.tvSecondSpinner);
             tvSecondSpinner.setText(value2);
 

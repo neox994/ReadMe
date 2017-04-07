@@ -77,7 +77,7 @@ public class Activity4 extends Activity{
             public void onClick(View v) {
 
                 inputValue = Weight.getText().toString();
-                if (inputValue.matches("") ||(inputValue.matches("."))) {
+                if (inputValue.isEmpty() || inputValue.equals(".")){
                     Toast.makeText(getApplicationContext(), "Please Enter value!!!", Toast.LENGTH_SHORT).show();
                 } else {
                     double input = Double.parseDouble(Weight.getText().toString());
