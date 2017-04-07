@@ -110,7 +110,23 @@ public class Activity4 extends Activity{
         if (value1.equals("Pounds") && value2.equals("Pounds")) {
             result =input;
         }
-    return result;
+        if (value1.equals("Grams") && value2.equals("Pounds")) {
+            result =WeightCon.g2lbs(input);
+        }
+        if (value1.equals("Pounds") && value2.equals("Grams")) {
+            result =WeightCon.lbs2g(input);
+        }
+        if (value1.equals("Grams") && value2.equals("Grams")) {
+            result =input;
+        }
+        if (value1.equals("Kilograms") && value2.equals("Grams")) {
+            result =WeightCon.kg2g(input);
+        }
+        if (value1.equals("Grams") && value2.equals("Kilograms")) {
+            result =WeightCon.g2kg(input);
+        }
+
+        return result;
     }
 
 }

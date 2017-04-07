@@ -1,9 +1,6 @@
 package com.example.neboja.unicon;
 import android.app.Activity;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.text.style.BackgroundColorSpan;
-import android.widget.ImageButton;
 import android.widget.TextView;
 import android.view.View;
 
@@ -14,7 +11,7 @@ public class RActivity extends Activity {
     Double inputValue, result;
     Bundle bundle;
     int color;
-View view;
+    View view;
 
 
     @Override

@@ -10,7 +10,6 @@ import android.widget.Spinner;
 import android.content.Intent;
 import android.widget.Toast;
 
-import static android.R.id.input;
 
 
 public class Activity2 extends Activity{

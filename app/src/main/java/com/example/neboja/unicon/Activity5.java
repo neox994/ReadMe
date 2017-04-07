@@ -60,7 +60,7 @@ public class Activity5 extends Activity {
             }
         });
 
-        spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+             spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 Object item2 = parent.getItemAtPosition(position);
@@ -121,6 +121,22 @@ public class Activity5 extends Activity {
         }
         if (value1.equals("Centimeters") && value2.equals("Centimeters")) {
             result = input;
+        }
+
+        if (value1.equals("Meters") && value2.equals("Centimeters")) {
+        result = LenghtCon.m2cm(input);
+    }
+        if (value1.equals("Centimeters") && value2.equals("Meters")) {
+            result = LenghtCon.cm2m(input);
+        }
+        if (value1.equals("Meters") && value2.equals("Meters")) {
+            result = input;
+        }
+        if (value1.equals("Meters") && value2.equals("Inches")) {
+            result = LenghtCon.m2inch(input);
+        }
+        if (value1.equals("Inches") && value2.equals("Meters")) {
+            result = LenghtCon.inch2m(input);
         }
 
         return result;
